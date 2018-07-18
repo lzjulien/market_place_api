@@ -44,3 +44,5 @@ gem 'active_model_serializers'
 group :doc do
   gem 'sdoc', require: false
 end
+
+gem 'devise'
