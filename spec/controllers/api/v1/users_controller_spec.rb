@@ -9,10 +9,8 @@ describe Api::V1::UsersController, type: :controller do
       get :show, params: {id: @user.id}, format: :json
     end
 
-    it "returns the informationabout a reporter on a hash" do
+    it "returns the information about a reporter on a hash" do
       user_response = JSON.parse(response.body, symbolize_names: true)
-      p user_response[:email]
-      p @user.email
       expect(user_response[:email]).to eql @user.email
     end
 
