@@ -8,7 +8,7 @@ MarketPlaceApi::Application.routes.draw do
   #     constraints: ApiConstraints.new(version: 1, default: true) do
   #
   #     # resources :users
-  #     resources :users, only: [:show]
+  #     # resources :users, only: [:show]
   #     # resources :users do
   #     #   member do
   #     #     get 'show'
@@ -19,9 +19,8 @@ MarketPlaceApi::Application.routes.draw do
 
 
   devise_for :users
-  namespace :api do
-    namespace :v1, controller: 'api/v1' do
-
+  scope module: :api do
+    scope module: :v1 do
       resources :users, only: [:show]
       # get 'users' => 'users#show'
     end
