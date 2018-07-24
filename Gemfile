@@ -16,6 +16,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'jquery-rails'
 
+# gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
+# gem 'compass-rails'
+# gem 'furatto'
+# gem 'font-awesome-rails'
+# gem 'simple_form'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-collection_matchers'
@@ -37,6 +43,9 @@ group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
 end
+
+
+
 
 #Api gems
 gem 'active_model_serializers'
