@@ -65,17 +65,17 @@ describe Api::V1::UsersController, type: :controller do
         expect(user_response[:email]).to eql "newmail@example.com"
       end
 
-      it{expect(response).to have_http_status(200)}
+      it {expect(response).to have_http_status(200)}
     end
 
     context "when is not created" do
       before(:each) do
         @user = FactoryBot.create :user
-        patch :update, params: {id: @user.id,user:{email:"badeamil.com"}}, format: :json
+        patch :update, params: {id: @user.id, user: {email: "badeamil.com"}}, format: :json
       end
 
       it "renders an errors json" do
-        user_response = JSON.parse(response.body, symbolize_names:true)
+        user_response = JSON.parse(response.body, symbolize_names: true)
         expect(user_response).to have_key(:errors)
       end
 
@@ -86,6 +86,15 @@ describe Api::V1::UsersController, type: :controller do
 
       it {expect(response).to have_http_status(422)}
     end
+  end
+
+  describe "DELETE #destroy" do
+    before(:each) do
+      @user = FactoryBot.create :user
+      delete :destroy, params: {id: @user.id}, format: :json
+    end
+
+    it {expect(response).to have_http_status(204)}
   end
 
 end
