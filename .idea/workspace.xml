@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="772bf4df-a043-4f11-ad6a-029e99d6e9a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/api/v1/sessions_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/v1/sessions_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/authenticable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/authenticable.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/concerns/authenticable_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/concerns/authenticable_spec.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -20,27 +23,77 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/market_place_api@Api__V1__UsersController_GET__show__market_place_api.rcov" NAME="Api::V1::UsersController GET #show: market_place_api Coverage Results" MODIFIED="1532418447896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="market_place_api" />
+    <SUITE FILE_PATH="coverage/market_place_api@Api__V1__UsersController_GET__show__market_place_api.rcov" NAME="Api::V1::UsersController GET #show: market_place_api Coverage Results" MODIFIED="1532504060955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="market_place_api" />
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="market_place_api" />
+    <favorites_list name="market_place_api">
+      <favorite_root url="file://$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="authenticable.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/concerns/authenticable.rb">
+      <file leaf-file-name="users_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="108">
+              <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="request_helpers.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/support/request_helpers.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_controller_spec.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+              <folding>
+                <marker date="1532504484567" expanded="true" signature="2517:3181" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="45">
+              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authenticable.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/concerns/authenticable.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="16" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authenticable_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/concerns/authenticable_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sessions_controller.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -69,6 +122,8 @@
       <find>json_response</find>
       <find>params</find>
       <find>application</find>
+      <find>auth_token</find>
+      <find>current_user</find>
     </findStrings>
     <replaceStrings>
       <replace>json_response</replace>
@@ -96,19 +151,19 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/support/request_helpers.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180724092253_add_unique_to_users.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180724085444_add_authentication_token_to_users.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/api/v1/sessions_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/concerns/authenticable_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/concerns/authenticable.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/concerns/authenticable.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/concerns/authenticable_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" />
       </list>
     </option>
   </component>
@@ -131,9 +186,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="389" />
-    <option name="y" value="119" />
-    <option name="width" value="1599" />
+    <option name="x" value="645" />
+    <option name="y" value="171" />
+    <option name="width" value="1625" />
     <option name="height" value="642" />
   </component>
   <component name="ProjectView">
@@ -169,7 +224,28 @@
               <item name="market_place_api" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="market_place_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="market_place_api" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="market_place_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="market_place_api" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
               <item name="concerns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="market_place_api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="market_place_api" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -361,7 +437,7 @@
       <workItem from="1532056303785" duration="352000" />
       <workItem from="1532078560331" duration="378000" />
       <workItem from="1532078966264" duration="2000" />
-      <workItem from="1532312683118" duration="35474000" />
+      <workItem from="1532312683118" duration="40693000" />
     </task>
     <task id="LOCAL-00001" summary="change file of .gitignore">
       <created>1531708292842</created>
@@ -390,25 +466,29 @@
     <history-entry file="Api__V1__UsersController_GET_#show__market_place_api - 2018.07.24 at 15h 47m 30s.xml">
       <configuration name="Api::V1::UsersController GET #show: market_place_api" configurationId="RSpecRunConfigurationType" />
     </history-entry>
+    <history-entry file="Api__V1__UsersController_GET_#show__market_place_api - 2018.07.25 at 15h 34m 25s.xml">
+      <configuration name="Api::V1::UsersController GET #show: market_place_api" configurationId="RSpecRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63004000" />
+    <option name="totallyTimeSpent" value="68223000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="389" y="119" width="1599" height="642" extended-state="0" />
+    <frame x="645" y="171" width="1625" height="642" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50345355" side_tool="true" weight="0.3806706" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49695495" weight="0.38715595" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49654642" visible="true" weight="0.34862384" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18368657" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49654642" visible="true" weight="0.42752293" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18319646" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32933104" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.399287" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39816514" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32951543" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -424,18 +504,18 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49695495" weight="0.38715595" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18368657" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18319646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32933104" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49654642" visible="true" weight="0.34862384" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49654642" visible="true" weight="0.42752293" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50345355" side_tool="true" weight="0.3806706" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.399287" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39816514" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32933104" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32951543" />
@@ -694,13 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/request_helpers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -750,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/sessions_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -773,36 +839,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controllers/concerns/authenticable_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" lean-forward="true" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="15">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/concerns/authenticable.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="121">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/concerns/authenticable_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="45">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/request_helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+          <folding>
+            <marker date="1532504484567" expanded="true" signature="2517:3181" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

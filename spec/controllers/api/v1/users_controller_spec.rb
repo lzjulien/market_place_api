@@ -54,9 +54,14 @@ describe Api::V1::UsersController, type: :controller do
 
   describe "PUT/PATCH #uppdate" do
 
+    before(:each) do
+      @user = FactoryBot.create :user
+      request.headers['Authorization'] =  @user.auth_token
+    end
+
     context "when is successfully updated" do
       before(:each) do
-        @user = FactoryBot.create :user
+        # @user = FactoryBot.create :user
         patch :update, params: {id: @user.id, user: {email: "newmail@example.com"}}, format: :json
       end
 
@@ -70,7 +75,7 @@ describe Api::V1::UsersController, type: :controller do
 
     context "when is not created" do
       before(:each) do
-        @user = FactoryBot.create :user
+        # @user = FactoryBot.create :user
         patch :update, params: {id: @user.id, user: {email: "badeamil.com"}}, format: :json
       end
 
@@ -91,6 +96,7 @@ describe Api::V1::UsersController, type: :controller do
   describe "DELETE #destroy" do
     before(:each) do
       @user = FactoryBot.create :user
+      request.headers['Authorization'] =  @user.auth_token
       delete :destroy, params: {id: @user.id}, format: :json
     end
 
