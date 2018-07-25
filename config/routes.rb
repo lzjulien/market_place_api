@@ -23,6 +23,7 @@ MarketPlaceApi::Application.routes.draw do
     scope module: :v1 do
       resources :users, only: [:show, :create, :update, :destroy]
       # get 'users' => 'users#show'
+      resources :sessions, only: [:create, :destory]
     end
   end
 end
