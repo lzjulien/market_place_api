@@ -9,8 +9,8 @@ describe Api::V1::SessionsController, type: :controller do
 
     context "when the credentials are correct" do
       before(:each) do
-        credentials = { email: @user.email, password: "12345678" }
-        post :create, params:{ session: credentials }
+        credentials = {email: @user.email, password: "12345678"}
+        post :create, params: {session: credentials}
       end
 
       it "returns the user record corresponding to the given credentials" do
@@ -37,6 +37,17 @@ describe Api::V1::SessionsController, type: :controller do
 
       it {expect(response).to have_http_status(422)}
     end
+
+  end
+
+  describe "DELETE #destory" do
+    before(:each) do
+      @user = FactoryBot.create :user
+      sign_in @user, store: false
+      delete :destroy, id: @user.auth_token
+    end
+
+    it {expect(response).to have_http_status(204)}
 
   end
 
