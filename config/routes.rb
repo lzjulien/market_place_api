@@ -24,6 +24,7 @@ MarketPlaceApi::Application.routes.draw do
       resources :users, only: [:show, :create, :update, :destroy]
       # get 'users' => 'users#show'
       resources :sessions, only: [:create, :destory]
+      resources :products, only: [:show, :index]
     end
   end
 end

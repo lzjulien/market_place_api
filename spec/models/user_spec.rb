@@ -32,15 +32,33 @@ RSpec.describe User, type: :model do
   end
 
 
-  # describe "when email is not present" do
-  #   before { @user.email = " "}
-  #
-  #   it { should_not validate_presence_of(:email)}
-  #   it { should validate_uniqueness_of(:email)}
-  #   it { should validate_confirmation_of(:password)}
-  #   it { should allow_value('example@domain.com').for(:email)}
-  #
-  # end
+  describe "when email is not present" do
+    before { @user.email = " "}
+
+    # it { should_not validate_presence_of(:email)}
+    # it { should validate_uniqueness_of(:email)}
+    it { should validate_confirmation_of(:password)}
+    it { should allow_value('example@domain.com').for(:email)}
+
+  end
+
+  it { should have_many :products}
+
+  describe "#products association" do
+    before do
+      @user.save
+      3.times{FactoryBot.create :product, user: @user}
+    end
+
+    it "Destroys the associated products on self destruct" do
+      products = @user.products
+      @user.destroy
+      products.each do |product|
+        expect(Product.find(product)).to eql(nil)
+      end
+    end
+  end
+
 end
 
 
