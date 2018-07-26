@@ -21,10 +21,12 @@ MarketPlaceApi::Application.routes.draw do
   devise_for :users
   scope module: :api do
     scope module: :v1 do
-      resources :users, only: [:show, :create, :update, :destroy]
-      # get 'users' => 'users#show'
+      resources :users, only: [:show, :create, :update, :destroy] do
+
+        # resources :products, only: [:create]
+      end
       resources :sessions, only: [:create, :destory]
-      resources :products, only: [:show, :index]
+      resources :products, only: [:show, :index, :create, :update, :destroy]
     end
   end
 end
