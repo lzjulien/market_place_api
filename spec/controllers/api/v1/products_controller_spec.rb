@@ -17,6 +17,11 @@ describe Api::V1::ProductsController, type: :controller do
 
     it {expect(response).to have_http_status(200)}
 
+    it "has the user as a embede object" do
+      product_response = JSON.parse(response.body, symbolize_names:true)
+      expect(product_response[:product][:user][:email]).to eql @product.user.email
+    end
+
   end
 
   describe "GET #index" do

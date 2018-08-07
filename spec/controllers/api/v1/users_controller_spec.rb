@@ -61,7 +61,6 @@ describe Api::V1::UsersController, type: :controller do
 
     context "when is successfully updated" do
       before(:each) do
-        # @user = FactoryBot.create :user
         patch :update, params: {id: @user.id, user: {email: "newmail@example.com"}}, format: :json
       end
 
@@ -75,7 +74,6 @@ describe Api::V1::UsersController, type: :controller do
 
     context "when is not created" do
       before(:each) do
-        # @user = FactoryBot.create :user
         patch :update, params: {id: @user.id, user: {email: "badeamil.com"}}, format: :json
       end
 

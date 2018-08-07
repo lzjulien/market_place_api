@@ -16,6 +16,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'jquery-rails'
 
+
 # gem 'sabisu_rails', github: "IcaliaLabs/sabisu-rails"
 # gem 'compass-rails'
 # gem 'furatto'
@@ -28,6 +29,9 @@ group :development, :test do
   gem 'rspec-its'
   gem 'rspec-rails'
   gem 'rspec_junit_formatter'
+  gem "factory_bot_rails"
+  gem 'ffaker'
+
 end
 
 group :development do
@@ -38,14 +42,9 @@ group :development do
 end
 
 group :test do
-  gem "factory_bot_rails"
-  gem 'ffaker'
   gem 'shoulda-matchers'
   gem 'capybara'
 end
-
-
-
 
 #Api gems
 gem 'active_model_serializers'
